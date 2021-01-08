@@ -1,0 +1,63 @@
+[data-letters]:before {
+    content: attr(data-letters);
+    display: inline-block;
+    font-size: 1em;
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    border-radius: 50%;
+    background: red;
+    vertical-align: middle;
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+}
+
+.Card {
+    /*box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2);*/
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    padding: 15px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .20);
+    cursor: pointer;
+    transition: transform 1s, box-shadow 100ms;
+}
+
+@media (max-width: 700px) {
+    .Card {
+        margin-right: 5%;
+    }
+}
+
+
+.Card:hover, .Card:active {
+    transform: scale(1.1);
+    /*box-shadow: 0 10px 35px rgba(0, 0, 0, .25);*/
+    box-shadow: 0 10px 35px #30BE76;
+}
+
+.Card p {
+    margin-bottom: 2%;
+}
+
+
+.buttonEdit {
+    display: none;
+}
+
+.Card:hover .buttonEdit {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #30BE76;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2%;
+}

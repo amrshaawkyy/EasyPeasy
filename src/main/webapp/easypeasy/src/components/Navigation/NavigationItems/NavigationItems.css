@@ -1,0 +1,29 @@
+.NavigationItems {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.NavigationItems img {
+    padding-bottom: 5px;
+    height: 35%;
+}
+
+
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
+
+    .NavigationItems img {
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .msgs {
+        display: inherit;
+    }
+}

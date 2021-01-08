@@ -1,0 +1,131 @@
+.base-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.base-containers .headers {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.base-containers .contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.base-containers .contents .images {
+    width: 21em;
+}
+
+.base-containers .contents .images img {
+    width: 50%;
+    height: 50%;
+}
+
+.base-containers .contents .forms {
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.base-containers .contents .forms .form-groups {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.base-containers .contents .forms .form-groups label {
+    font-size: 15px;
+}
+
+.base-containers .contents .forms .form-groups input {
+    margin-top: 0px;
+    min-width: 18em;
+    height: 25px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f3f3f3;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+}
+
+.base-containers .contents .forms .form-groups input:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #3474db b2;
+}
+
+.base-containers .footers {
+    margin-top: 2em;
+}
+
+.btn {
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+    background-color: #30BE76;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2386c8;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.login .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    background-color: #30BE76;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+}
+
+.login .right-side.right {
+    right: -40%;
+    align-items: flex-end;
+}
+
+.login .right-side.right:hover {
+    right: -45%;
+}
+
+.login .right-side.left {
+    right: 40%;
+    align-items: flex-start;
+}
+
+.login .right-side.left:hover {
+    right: 45%;
+}
+
+.login .right-side .text {
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.help-block {
+    font-size: 12px;
+}

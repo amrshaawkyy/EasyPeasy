@@ -1,0 +1,50 @@
+.Content {
+    padding-top: 1%;
+    margin-top: 5%;
+    min-height: 90vh;
+    background-color: #f7f8fa;
+    font-family: "Open Sans", sans-serif;
+    /*background-image: url(../Images/25.jpg);*/
+    /*background-size: cover;*/
+    /*background-position: 50% 50%;*/
+    /*background-size: 100%;*/
+    /*opacity: 0.3;*/
+    /*background-blend-mode: overlay;*/
+}
+
+.Content::before {
+    background-image: url(../Images/25.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-size: 100%;
+    content: "";
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.20;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+
+.Recipes {
+    position: relative;
+}
+
+@media (max-width: 499px) {
+
+    .Content {
+        margin-top: 19%;
+    }
+}
+
+.img {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+}

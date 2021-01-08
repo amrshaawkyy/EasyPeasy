@@ -1,0 +1,23 @@
+
+.Button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 1px 15px;
+}
+
+.Button:hover {
+    background-color: #30BE76;
+}
+
+.Success {
+    color: dimgrey;
+}
+
+.Button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
